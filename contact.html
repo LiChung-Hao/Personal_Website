@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Li</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form">
+        <form>
+          <div>
+            <br />
+            <label for="name">Name:</label>
+            <br />
+            <input class="noCenter" id="nameText" type="text" />
+          </div>
+          <div>
+            <label for="phone">Mobile: </label>
+            <br />
+            <input class="noCenter" id="telText" type="text" />
+          </div>
+          <div>
+            <label for="phone">Subject: </label>
+            <br />
+            <input class="noCenter" id="subText" type="text" />
+          </div>
+
+          <div>
+            <label for="need">Message: </label>
+            <br />
+            <textarea
+              class="noCenter"
+              name="need"
+              rows="10"
+              id="bodyText"
+            ></textarea>
+          </div>
+
+          <button id="submit" type="submit" onclick="submitHandler();">
+            Submit
+            <a href="mailto:wesley.lee.hau@gmail.com" id="mailTo"></a>
+          </button>
+          <!-- <button id="submit" type="submit" onclick="submitHandler();">
+            Submit<a href="mailto:wesley.lee.hau@gmail.com" id="mailTo"></a>
+          </button> -->
+        </form>
+      </section>
+
+      <div class="line"></div>
+      <section class="contact">
+        <h1>Contact Me</h1>
+        <div class="content">
+          <h2 class="contactInfo">Mobile:</h2>
+          <h3>+1-613-870-1568</h3>
+
+          <h2 class="contactInfo">E-Mail:</h2>
+          <h3>wesley.lee.hau@gmail.com</h3>
+
+          <h2 id="timing">
+            Contact Time: <br />
+            Mon.-Fri. <br />
+            9AM - 6PM
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chung-hao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+    </div>
+    <script>
+      //宣告預設表單內容為空 （你想要的話也可以加東西）
+      var initSubject = '',
+        initBody = '';
+
+      //按下傳送按鈕後執行
+      function submitHandler() {
+        var to = 'wesley.lee.hau@gmail.com'; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+        var name = nameText.value; //讀取ID為 nameTextuser 物件中的值
+        // var email = emailText.value;
+        var tel = telText.value;
+        var subject = subText.value;
+        //把user填的資料都塞到 mail body 中
+        var body = '' + bodyText.value + '%0A%0A%0A'; //%0A是換行 換了三行
+        body += 'From：' + nameText.value + '%0A';
+        // body += 'Email：' + emailText.value + '%0A';
+        body += 'Tel：' + telText.value;
+        //傳送的主要程式碼
+        mailTo.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+        mailTo.click();
+      }
+      //在body onload
+      function init() {
+        subText.value = initSubject;
+        toText.value = initTo;
+        bodyText.value = initBody;
+      }
+    </script>
+  </body>
+</html>
