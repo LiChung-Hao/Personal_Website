@@ -25,26 +25,43 @@
     />
 
     <style>
-      *{transition: all .3s ease-in-out; }
-      h4{
-        
-        color:#0a4f52}
-      section.cards  li {
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
         font-weight: normal;
         text-align: left;
         list-style-type: none;
         padding: 0.18rem 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
-      section.cards td{
+      section.cards td {
         font-weight: bold;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         padding: 0.18rem 0;
       }
 
-      #button:hover{
+      #button:hover {
         transition: all 0.31s ease;
-      color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
       }
     </style>
     <link rel="stylesheet" href="./style/style.css" />
@@ -54,224 +71,60 @@
     <header>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resume.html">Resume</a></li>
-          <li><a class="active" href="#">Portfolio</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a class="active" href="#">W1&2</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
         </ul>
       </nav>
     </header>
-    <h2 style="padding-top:3rem">Capstone Project Week 1 and Week 2</h2>
-    <br>
-    <h3 class="noCenter">Team work</h3>
-    <p style="margin-top: 2.8rem;">Making games is very interesting for me. I like the process of adding ideas to make the game more interesting for people.</p>
-    <p style="margin-top: 1.2rem;">* click the name of game to download</p>
+    <h2 style="padding-top: 3rem">Capstone Project Week 1 and Week 2</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      The first week we had a brainstorm for game design. We discussed the
+      possibility of developing VR, 3D, and 2D games. Based on the resources
+      including time and knowledge we have, we agreed to make a 2D game and have
+      Overcooked2 and Turn The Line as references to build our game. And we had
+      our Game Design Document done as a blueprint to build our game.
+    </p>
+    <p class="noCenter" id="blogContent">
+      We all have different passions we hope to focus on such as art(Ethan),
+      programming(Me and Stel), audio design(Dorian) and UI/UX design (Joshua).
+      We encourage our team members to break the role, so we can all try
+      different parts of game development. We decided to work on the Microsoft
+      Dev-Ops system since our team member Stel has some good experience project
+      management.
+    </p>
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      In these two weeks, I had learned how to use the Dev-Ops System, how to
+      set hooks so every update on GitHub and Dev-Ops can be shown on our
+      Discord Team. I had also learned how to build the localization system so
+      we can have our game in English and French.
+    </p>
+    <img id="blogImg" src="./img/Blog/W1&2P1.png" alt="localizationUnity" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W1&2P2.png" alt="loaclizationCode" />
+    <p class="noCenter" id="blogContent">
+      I used LeanLocalization, an asset on the Unity store, to have the
+      localization system work. I asked for advice from our mentors from
+      SnowedIn Studio to improve my codes. I will try to put the localization
+      manager into one script, so later it will be easier to modify, improve,
+      and expand the content.
+    </p>
+    <p class="noCenter" id="blogContent">
+      I had made a script to add the feature of moving. Stel shared some
+      thoughts with me to improve my code, like using the local variables if
+      they are only used locally.
+    </p>
+    <img id="blogImg" src="./img/Blog/W1$2P3.png" alt="BasicMoveCode" />
+    <p class="noCenter" id="blogContent">
+      I think I will keep working on the programming part and in the meantime, I
+      am also interested in building art assets. I think I will put some work
+      into making art assets in the upcoming week.
+    </p>
     <div class="hrLine"></div>
-    <main>
-      <section class="contentLeft">
-        <h3>Capstone Project</h3>
-        <br />
-        <p >
-          Milestones as two years of learning game programming at St. Lawrence College.
-        </p>
-        <br />
-        <p >
-          I am honored to work with my team on this game development. 
-        </p>
-        <p >
-          This blog records my part of development history.
-        </p>
-        <p>       
-          <button>
-            <a id="button" href="./blog.html">Blog</a>
-          
-        </button></p>
 
-      </section>
-      <section class="contentRight noCenter">
-        <img
-          class="picture"
-          width="350px"
-          src="./img/TheRock.jpg"
-          alt="haosPic"
-          title="Hire me please"
-        />
-      </section>
-  </main>
-    <div class="hrLine"></div>
-    <section class="cards" style="  display: flex;
-    text-align: center;
-    width: 90%;
-    min-height: 45vh;
-    margin-left: 5%;
-    margin-top: 35px;
-    flex-wrap: wrap;
-">
-      
-      <div  class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%; " class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/tank.jpg" alt="tank" />
-        </div>
-        <a href="https://drive.google.com/file/d/1iNOnUc0UktDMYkMM_EvgwccUzrlq47wE/view?usp=sharing" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">War for Diamond! 3D</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Collected game materials online</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Radar UI shows enemies' location</li><li>&#9734;Randomly instantiate Gem</li> <li>&#9734;Enemies' AI system to chase and attack the player</li><li>&#9734;Beautiful terrain and VFX</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/Moon.jpg" alt="SpaceShooting" />
-        </div>
-        <a href="https://drive.google.com/file/d/1VGsTxr-QRRaooi-IGchfwGHwJtj_MHMZ/view?usp=sharing" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">Meteorite Coming! VR</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;VR project building skills</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Reach high score in limitted time</li><li>&#9734;Randomly instantiate asteroids</li> <li>&#9734;Score UI on the destroyed asteroids' location</li><li>&#9734;Vivid scene and space props' model</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/spaceWars.jpg" alt="SpaceShooting" />
-        </div>
-        <a href="https://drive.google.com/file/d/1340nPiXr1veN8hM2zgVyewCqHMfGHC8X/view?usp=sharing" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">Space Fighter! 2D</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Collect materials online</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Particle effect after enemy destroyed</li><li>&#9734;Scroll background</li> <li>&#9734;Various types of enemy</li><li>&#9734;Weapon upgrades once reaching 1000 points</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="hrLineShorter"></div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/garden2.jpg" alt="SpaceShooting" />
-        </div>
-        <a href="https://drive.google.com/file/d/1kvPSE-zqOMOS9Pz0D83UxbS4R6pBMoH5/view?usp=sharing" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">Garden Defender! 2D</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Collected materials online</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Built the grid system on sprite</li><li>&#9734;Created animations on each character</li><li>&#9734;Randomly instantiate foxes and crocodiles</li> <li>&#9734;Cute animations</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/brickBreaker.jpg" alt="BrickBreaker" />
-        </div>
-        <a href="https://drive.google.com/file/d/1h0qh8lYurB1ZA0NmkUQ5T_K9pRG6iNQH/view" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">Brick Breaker! 2D</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Collected materials online</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Used it as a material to teach kids using Unity</li><li>&#9734;The higher level, the faster moving speed of the ball</li> <li>&#9734;Player has to handle more than one balls in higher level</li><li>&#9734;The bricks have varying degrees of damage</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/sliceFruit.jpg" alt="SliceFruit" />
-        </div>
-        <a href="https://drive.google.com/file/d/1v1Ave1ZtuAOCFZljzRCm1l-Xh_zSzPJU/view?usp=sharing" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">Slice Fruit! Mobile(android)</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Build the project from scratch<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Android project building skills</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Scroll on the monitor to slice fruits</li><li>&#9734;Randomly instantiate fruits</li> <li>&#9734;Score UI shows on the destroyed fruits' location</li><li>&#9734;Reach 300 score in limitted time</li><li>&#9734;If player fails to slice the fruit before fruits touching the ground, minus 3 points</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="hrLineShorter"></div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/BGC1.jpg" alt="BGC Diamond Runner" />
-        </div>
-        <a href="https://drive.google.com/file/d/1Ro3dROfv4BGWvTWPFLw1xD2YODqWSWTU/view?usp=share_link" title="Download" target="_blank"><h4 style="font-size: 1.272rem;">BGC Diamond Runner</h4></a>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-              <td>Brainstorm game ideas<ul><li>&#10003;Honed my Unity Engine and C# skills</li> <li>&#10003;Collected materials online</li><li>&#10003;Game design</li></ul></td>
-            </th>
-<tr>            <th>
-  <td>Highlight<ul><li>&#9734;Used it as a material to teach kids using Unity</li><li>&#9734;Kids designed the terrain and diamonds' location</li><li>&#9734;Kids designed the menu and music</li> <li>&#9734;Cute animations</li></ul></td>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/TOPSECRET.jpg
-          " alt="BrickBreaker" />
-        </div>
-        <h4 style="font-size: 1.272rem;">Coming Soon...</h4>
-
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-            <th>
-            </th>
-<tr>            <th>
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card">
-        <div style="width: 300px; height: 300px; border-radius: 10%;" class="img-container">
-          <img style="width: 300px; height: 300px;border-radius: 10%;" src="./img/TOPSECRET.jpg" alt="SliceFruit" />
-        </div>
-        <h4 style="font-size: 1.272rem;">Coming Soon...</h4>
-        <table class="work-item-desc noCenter" style="margin: auto">
-          <!-- Static row -->
-          <tbody>
-
-<tr>            <th>
-  
-</th></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
     <br />
     <hr />
     <div class="socialMedia">
@@ -295,8 +148,8 @@
           title="linkedIn"
       /></a>
       <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
-      ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
-    /></a>
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
     </div>
   </body>
 </html>
