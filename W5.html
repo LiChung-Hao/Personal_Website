@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W5</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 5</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      We have one more week to complete our prototype, and we are very close to
+      finishing it. This week, we focused on some minor parts and merged our
+      works. Stel completed the machine running feature. Josh worked on the
+      Input System of both the keyboard and XBox controller. Dorian kept focus
+      on Audio System. Ethan improved the art assets, and I polished the
+      localization system and worked on the UI.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W5P1.png" alt="White board" />
+
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      This week, I worked on improving the localization system. I made a system
+      that even if the content of a game expands to a big one, the developers
+      could easily add more content to the script in both languages (English and
+      French).
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W5P2.png" alt="Code" />
+    <br />
+    <p class="noCenter" id="blogContent">
+      During the meeting with the mentors, I received some suggestions which I
+      thought were very practical. Inspired by their suggestions, I stored the
+      content in external files and created a ReadFile function to read the
+      content in the txt file and added it to the dictionary. This allows the
+      programmers can get the content by calling the GetString function with the
+      key, and the content editors can edit and expand in the txt file.
+    </p>
+    <img id="blogImg" src="./img/Blog/W5P3.png" alt="Code" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W5P4.png" alt="Code" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W5P5.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      I also added a new feature to the system which allows it to read the
+      variables stored outside of the functions.
+    </p>
+    <img id="blogImg" src="./img/Blog/W5P6.png" alt="FrenchTXT" />
+    <p class="noCenter" id="blogContent">
+      In addition, I improved our UI design. I used some materials from the
+      website Kenney to change the appearance of our menu.
+    </p>
+    <img id="blogImg" src="./img/Blog/W5P7.png" alt="MenuUI" />
+
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
