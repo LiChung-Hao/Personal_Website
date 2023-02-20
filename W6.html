@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W6</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 6</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      After finishing our prototype, we started to polish our game. My teammate
+      Ethan would like to do more programming work so we agreed that I helped
+      build art assets which were 6 machine designs in our game. I thought it
+      was a good opportunity to practice my people skills since building art
+      assets in consecutive styles needs a lot of communication. I hope I can
+      sharpen my skills during this process.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W6P1.png" alt="White board" />
+    <figcaption>plan for the upcoming three weeks</figcaption>
+    <br />
+    <p>
+      In the meantime, I had a task to build the lobby scene where players can
+      join the game. I had to figure out a way to add players into the game and
+      I need to work with my teammate Joshua more this week since he is working
+      on the Input System.
+    </p>
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      I created a scene and some hints so players know how to join the game.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W6P2.png" alt="LOBBY SCENE" />
+    <br />
+    <p class="noCenter" id="blogContent">
+      I had an array of game objects and a public static integer to track how
+      many players are going to join the game.
+    </p>
+    <img id="blogImg" src="./img/Blog/W6P3.png" alt="Code" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W6P4.png" alt="Code" />
+    <br />
+    <p>
+      This integer is going to be read in the next scene, which is the game
+      scene, so it knows how many players are going to be set active.
+    </p>
+    <img id="blogImg" src="./img/Blog/W6P5.png" alt="Code" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W6P6.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      About the game art assets, I have completed one draft of the cutting
+      machine and I will discuss with Ethan about the style. Once there is some
+      conclusion, I will jump into creating the art assets.
+    </p>
+
+    <img id="blogImg" src="./img/Blog/W6P7.png" alt="MenuUI" />
+    <figcaption>
+      The red circled part has going up/down animation as a cutter
+    </figcaption>
+
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
