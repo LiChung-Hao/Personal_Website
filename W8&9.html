@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W8 & W9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W8&9</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 8 & Week 9</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      After our team meeting, we decided to outsource the art assets in our
+      game, so I changed the tasks I was working on to make the story scene, so
+      the players can know the background story of the game.
+    </p>
+    <p class="noCenter" id="blogContent">
+      I worked with Dorian, Joshua, and Ethan to brainstorm our story. They
+      shared some ideas like time travellers, real railroad history in Cornwall,
+      aliens from outer space….etc. I was happy that people were passionate
+      about it and in the meantime, they trusted me to write the story. After I
+      finished the story, I checked with Ethan to make sure my grammar was good
+      and the content in French was correct.
+    </p>
+    <br />
+    <p class="noCenter" id="blogContent">The story:</p>
+    <br />
+    <p class="noCenter" id="blogContent">
+      Players can receive recipes from the future to craft potions. Players
+      receive a message: In 2158, the population will reach 500 billion! People
+      need to alter their DNA with recipes from the future to make themselves
+      smaller so the planet can hold that many people. We need someone to
+      concoct these potions now, before the population crisis is too late!
+    </p>
+    <br />
+    <p class="noCenter" id="blogContent">
+      Then on March 2nd, we had a school trip to Snowed In Studio in Ottawa. We
+      met our mentors in person, and we had a really nice meeting talking about
+      which direction we should take in our game development. We improved our
+      workflow and game design, which meant a lot of things need to be cancelled
+      and restarted from scratch, but we were glad that finally we knew which
+      way to go!
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P1.png" alt="White board" />
+    <figcaption>A new workflow</figcaption>
+    <img id="blogImg" src="./img/Blog/W8P2.png" alt="White board" />
+    <figcaption>
+      A new game content that players need to follow the instruction to pick up
+      and put the right colour into the potion.
+    </figcaption>
+    <br />
+
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      I added the language Mandarin into our localization system. The issue I
+      met was that some characters could not be printed out correctly in the
+      game, even after I added the character manually into the fonts, it still
+      could not be solved, so I changed the content to avoid using certain words
+      to avoid such issues.
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P3.png" alt="Menu with Mandarin" />
+    <p class="noCenter" id="blogContent">
+      Another interesting challenge I met while putting Mandarin into the game
+      was changing the font. Since when players choose different languages they
+      prefer, the font in Mandarin has to be different, so I used a function to
+      track all Text Asset in the scene and change its font.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W8P4.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      Then I built the story scene. It works as characters show up and tell the
+      story. I made a mouth animation, and it will only move when the character
+      is still talking and the animation will stop once the character’s line is
+      finished.
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P5.png" alt="animation" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W8P6.png" alt="animation" />
+    <p class="noCenter" id="blogContent">
+      The lines are going to be shown by typing out.
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P7.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      The SentenceBehaviour function is running looping. Once a player clicks,
+      then moves to the next line or just finishes the line.
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P8.png" alt="Code" />
+    <p class="noCenter" id="blogContent">Check which character is talking.</p>
+    <img id="blogImg" src="./img/Blog/W8P9.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      These four functions are to set the mouth moving animation.
+    </p>
+    <img id="blogImg" src="./img/Blog/W8P10.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      After the story scene was finished, I jumped into the Jenkins settings. I
+      watched some tutorial videos on YouTube before, but this was my first time
+      putting the knowledge I learned into practice. Now there are still some
+      blocking errors which I don’t know how to solve, but I will keep working
+      on it, and I am sure I can figure it out soon.
+    </p>
+
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
