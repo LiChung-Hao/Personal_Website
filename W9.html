@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W9</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 9</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      This week we decided to complete our MVP (minimum viable product). After
+      changing the core content of our game, we would like to have our workflow
+      in the way as our mentor Matt suggested.
+    </p>
+    <img id="blogImg" src="./img/Blog/W9P1.png" alt="White board" />
+
+    <p class="noCenter" id="blogContent">
+      Stel had strong interest in building the MVP, so I decided to help set up
+      the Jenkins system and add some fun features into our game. I discussed it
+      with Stel and we agreed to add a mouse popping up feature in the game to
+      “annoy” the players. I thought it was a very interesting idea so I
+      couldn’t wait to start working on it.
+    </p>
+    <br />
+
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      Before the Jenkins computers were set ready by the IT department, I had
+      studied some materials on Google and some tutorials videos on Youtube. I
+      thought I finally had a chance to work on Jenkins, and I was ready to put
+      what I had learned into practice, but soon I found out I knew too little
+      about it. Thanks to the support from people who were also responsible for
+      Jenkins from other teams and our professor James, I finally made it work.
+      I have learned how to put in the right info into Jenkins and I will
+      definitely dive deeper into studying Jenkins build script later.
+    </p>
+    <br />
+    <p class="noCenter" id="blogContent">
+      After the Jenkins system was set up, I finally started working on the
+      mouse popping up feature. I scripted functions to make sure only one
+      single mouse will show up and the player has to collide it to eliminate
+      the mouse in 5 seconds or there will be punishment, and once the mouse is
+      eliminated, the next one will pop up randomly between one to ten seconds.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W9P2.png" alt="Code" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W9P3.png" alt="Code" />
+
+    <p class="noCenter" id="blogContent">
+      The punishment will be a canvas getting set active to block the player's
+      view.
+    </p>
+    <img id="blogImg" src="./img/Blog/W9p4.png" alt="animation" />
+    <br />
+    <p class="noCenter" id="blogContent">
+      After the scripting work was finished, I started the game art part. I
+      spent some time looking for inspiration on Google and then started drawing
+      on Gimp. I enjoyed the process very much, and I was happy with the work I
+      finished.
+    </p>
+    <img id="blogImg" src="./img/Blog/W9P5.png" alt="Code" />
+    <p class="noCenter" id="blogContent">Here is the completed feature:</p>
+    <img src="./img/Blog/W9G1.gif" />
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
