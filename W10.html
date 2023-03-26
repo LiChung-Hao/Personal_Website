@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W10</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 10</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      This week we decided to make it a completed game. We all agreed that our
+      progress was behind our schedule, so we planned to keep working on our MVP
+      to make it a complete game which is step two on our workflow. In the
+      sprint meeting, we decided to have a timer in our game. Once the timer
+      counts down to zero, then game over. A scene will show the player’s score
+      and the player can press a button to go back to the menu.
+    </p>
+    <img id="blogImg" src="./img/Blog/W10P1.png" alt="White board" />
+    <br />
+    <img id="blogImg" src="./img/Blog/W10P2.png" alt="White board" />
+    <p class="noCenter" id="blogContent">
+      We had a discussion about how we choose the feature to add into our game.
+      We planned that if any of our members want to add a feature to be added,
+      he has to make a post in the Discord group and wait until the post gets
+      the majority vote.
+    </p>
+    <p class="noCenter" id="blogContent">
+      And after I finished my sprint part, the game met some serious issues. The
+      game was collapsed, starting from the menu to the end of the game,
+      something went wrong, so I jumped in to fix the issues.
+    </p>
+    <br />
+
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      I got the timer feature part. About how to make a timer, I received some
+      suggestions from Joshua and our professor James. They suggested that I
+      could perform the timer in text but I preferred trying to have a sprite
+      switching so it can give more room for designers. Maybe for this game, it
+      is not necessary, but I hope the feature can be used in our future, even
+      in our other projects. It is challenging, but I would love to give it a
+      try.
+    </p>
+    <br />
+    <p class="noCenter" id="blogContent">
+      I set up a timeUI array to put hundreds digit (like 1 in 156), tens
+      digit(like 5 in 156), and digits (like 6 in 156). I also set up a sprite
+      array to store the sprites asset from 0 to nine.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W10P3.png" alt="Code" />
+    <br />
+
+    <p class="noCenter" id="blogContent">
+      After all these values have been set up, the timer can work by swapping
+      the sprites to show the correct number. I want the UI to be clean, so I
+      turned off the UI which is not used in the scene.
+    </p>
+    <img id="blogImg" src="./img/Blog/W10P4.png" alt="Code" />
+    <br />
+    <p class="noCenter" id="blogContent">Timer in the game looks like this:</p>
+    <img id="blogImg" src="./img/Blog/W10P5.png" alt="Code" />
+    <p class="noCenter" id="blogContent">
+      Then just before we tried to build our game and sent it to our mentors. We
+      noticed that the game had collapsed. The menu scene didn’t work properly,
+      so all after that acted weird. I removed the broken part of the objects in
+      the scene and added the good ones to fix the issue.
+    </p>
+    <p class="noCenter" id="blogContent">
+      At this moment, the game is a completed game. We will keep working on it
+      to polish it. A quick peek of the game:
+    </p>
+    <img src="./img/Blog/W10G1.gif" />
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
