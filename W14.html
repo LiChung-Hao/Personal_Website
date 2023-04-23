@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone W14</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+      h4 {
+        color: #0a4f52;
+      }
+      section.cards li {
+        font-weight: normal;
+        text-align: left;
+        list-style-type: none;
+        padding: 0.18rem 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      section.cards td {
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 0.18rem 0;
+      }
+
+      #button:hover {
+        transition: all 0.31s ease;
+        color: rgb(255, 255, 255);
+      }
+      #blogContent {
+        line-height: 190%;
+        margin-top: 0.1rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        padding-right: 6rem;
+      }
+      #blogSubHeader {
+        padding-left: 6rem;
+        padding-top: 5rem;
+      }
+      #blogImg {
+        margin-bottom: 1.1rem;
+        margin-top: 0.8rem;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/console-controller.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#">W14</a></li>
+          <li><a href="./blog.html">Back to Blog</a></li>
+          <li><a href="./portfolio.html">Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 style="padding-top: 3rem">Capstone Project Week 14</h2>
+    <br />
+    <h3 class="noCenter" id="blogSubHeader">Team work</h3>
+    <p class="noCenter" id="blogContent">
+      This was our last week working on the project! Our game structure,
+      mechanism, art, and text content were all completed. The polish work also
+      met our expectations, so this week we focused on quality assurance work.
+      Our professor James helped us walk through the process of the game test
+      and gave us a template of a test bug report.
+    </p>
+    <img id="blogImg" src="./img/Blog/W14P1.png" alt="Bug report" />
+    <br />
+    <p class="noCenter" id="blogContent">
+      The interesting part was that the way we debugged our game didn’t seem
+      right to me that we created the bug, and then we said we found it and
+      wrote a report about it, so I brought up the idea that we should debug the
+      other team’s game. I was happy that our professor James also thought it
+      was a good idea, and it could be how the students next year are going to
+      work on the debugging week.
+    </p>
+
+    <h3 class="noCenter" id="blogSubHeader">My work</h3>
+    <p class="noCenter" id="blogContent">
+      I noticed that after my teammate Josh implemented the new input system,
+      the interaction between cursor and buttons changed. It was an interesting
+      input system. There were some details I didn’t know such as how the cursor
+      works in XBox controller mode. I worked with Josh to modify the settings
+      of each button.
+    </p>
+    <img id="blogImg" src="./img/Blog/W14P2.png" alt="Menu" />
+    <br />
+    <p class="noCenter" id="blogContent">
+      Then I learned that the toggles worked differently as buttons when it came
+      to the cursor clicking, so Josh and I agreed to change the toggles to
+      buttons which could make the debugging tasks easier since we didn’t have
+      to find the way to work on the toggles.
+    </p>
+    <br />
+    <img id="blogImg" src="./img/Blog/W14P3.png" alt="button language" />
+    <p class="noCenter" id="blogContent">
+      Then I worked on improving the appearance of the timer. The original
+      worked fine, but the layout of it would misform when converting numbers
+      between tens and ones.
+    </p>
+    <img id="blogImg" src="./img/Blog/W14P4.png" alt="Code" />
+    <img id="blogImg" src="./img/Blog/W14P5.png" alt="Code" />
+
+    <p class="noCenter" id="blogContent">
+      The way I fixed it was to add spots so no matter the number is in tens or
+      ones, the format would keep the same.
+    </p>
+    <img id="blogImg" src="./img/Blog/W14P6.png" alt="Code" />
+    <img id="blogImg" src="./img/Blog/W14P7.png" alt="Code" />
+    <div class="hrLine"></div>
+
+    <br />
+    <hr />
+    <div class="socialMedia">
+      <a
+        href="https://www.facebook.com/profile.php?id=100072725778635"
+        target="_blank"
+        ><img src="./img/Icons/facebook.svg" alt="fb" title="facebook"
+      /></a>
+      <a href="mailto:wesley.lee.hau@gmail.com" target="_blank"
+        ><img
+          src="./img/Icons/7089163_gmail_google_icon.svg"
+          alt="ig"
+          title="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/chunghao-li-8596ba15b/"
+        target="_blank"
+        ><img
+          src="./img/Icons/317725_linkedin_social_icon.svg"
+          alt="linkedIn"
+          title="linkedIn"
+      /></a>
+      <a href="https://github.com/LiChung-Hao?tab=repositories" target="_blank"
+        ><img src="./img/Icons/github-brands 1.svg" alt="GitHub" title="GitHub"
+      /></a>
+    </div>
+  </body>
+</html>
